@@ -1,6 +1,4 @@
 :root {
-    
-
     --background: url(../Pictures/build-wallpaper.jpg);
    --outline: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -20,6 +18,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/*to create the initial structure of the webpage being centered with 20% borders and 60% content section */
 section {
     display: flex;
     position: relative;
@@ -65,11 +64,14 @@ h2 {
     letter-spacing: 1px;
 }
 
+/*this is just to make sure when "work" button is clicked
+that there is space between the "Work h2" and the nav bar*/
 #work {
     margin-top: 50px;
     padding-top: 50px;
 }
 
+/*h2 About Me box*/
 #topbar {
     margin-top: 30px;
     background-image: linear-gradient(to right, rgb(105, 83, 121, .9)50%, rgba(105,83,121,.4)100%);
@@ -83,22 +85,8 @@ h2 {
     border-left: rgb(81, 0, 128) solid 5px;
 }
 
-#topbar2 {
-    display:flex;
-    justify-content: flex-end;
-    background-image: linear-gradient(to left, rgb(105, 83, 121, .9)50%, rgba(105,83,121,.4)100%);
-    box-shadow: -2px 3px 3px black;
-    border-top-left-radius: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 280px;
-    margin-right: -20px;
-    margin-top: 100px;
-    margin-left: 75%;
-    border-right: rgb(81, 0, 128) solid 5px;
-}
 
+/*/////////SECTION ONE//////////// */
 .aboutme {
     background-image: linear-gradient(to left, rgb(105, 83, 121, .2)0%, rgba(237,131,92,1)
     90%);    
@@ -135,6 +123,7 @@ h2 {
     border: black solid 10px;
 }
 
+/* to try and make even space between the image and text*/
 .box {
     display: flex;
     width: 50%;
@@ -145,6 +134,23 @@ h2 {
     min-width: 400px;
 }
 
+/*h2 Work box*/
+#topbar2 {
+    display:flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to left, rgb(105, 83, 121, .9)50%, rgba(105,83,121,.4)100%);
+    box-shadow: -2px 3px 3px black;
+    border-top-left-radius: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 280px;
+    margin-right: -20px;
+    margin-top: 100px;
+    margin-left: 75%;
+    border-right: rgb(81, 0, 128) solid 5px;
+}
+/*////////// SECTION 2///////////// */
 .work{    
     background-image: linear-gradient(to right, rgb(105, 83, 121, .2)0%, rgba(237,131,92,1)
     90%);    
@@ -161,6 +167,73 @@ h2 {
     justify-content: center;
 }
 
+.card {
+    display: flex;
+    margin: 10px;
+    border: rgb(105, 83, 121, .9) solid 5px;
+    height: 200px;
+    width: 44%;
+    box-shadow: 0px 5px 1px rgb(105,83,121) ;
+}
+.card p {
+    color: white;
+    padding: 5px;
+    border-right: white solid 2px;
+    border-bottom: white solid 2px;
+    border-top: white solid 2px;
+    font-size: 20px;
+    background-color: rgb(105, 83, 121, .9);
+    margin-top: 10%;
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 20px;
+
+}
+.card img{
+    width: fit-content;
+    height: 100%;
+    border: white solid 2px;
+    filter: grayscale(.8);
+    min-width: 100px;
+}
+.card img:hover {
+    filter: grayscale(0)
+}
+
+.cardbigger {
+    display: flex;
+    margin: 10px;
+    border: rgb(105, 83, 121, .9) solid 10px;
+    height: 400px;
+    width: 90%;
+    box-shadow: 0px 5px 1px rgb(105,83,121) ;
+}
+.cardbigger p {
+    color: white;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 20px;
+    border-right: white solid 2px;
+    border-bottom: white solid 2px;
+    border-top: white solid 2px;
+    font-size: 40px;
+    background-color: rgb(105, 83, 121, .9);
+    margin-top: 25%;
+    position: absolute;
+}
+.cardbigger img {
+    width: fit-content;
+    height: 100%;
+    width: 100%;
+    border:white solid 2px;
+    filter: grayscale(.8);
+
+}
+.cardbigger img:hover {
+    filter: grayscale(0);
+}
+
+/* /////////SECTION 3////////// */
 .contact {
     background-image: linear-gradient(to left, rgb(105, 83, 121, .2)0%, rgb(105, 83, 121, .4)
     90%);    
@@ -184,12 +257,14 @@ h2 {
     width: 30px;
 }
 
+/*////////NAVIGATION/////////////*/
 .navbar {
     position: fixed;
     top: 5px;
-    left: 72%;
+    left: 75%;
     background: none;
 }
+
 .button {
     position: relative;
     box-sizing: border-box;
@@ -205,81 +280,7 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
     text-shadow: -2px 2px 5px black;
-    
 }
-
-.card {
-    display: flex;
-    margin: 10px;
-    border: rgb(105, 83, 121, .9) solid 5px;
-    height: 200px;
-    width: 44%;
-    box-shadow: 0px 5px 1px rgb(105,83,121) ;
-}
-
-.card p {
-    color: white;
-    padding: 5px;
-    border-right: white solid 2px;
-    border-bottom: white solid 2px;
-    border-top: white solid 2px;
-    font-size: 20px;
-    background-color: rgb(105, 83, 121, .9);
-    margin-top: 10%;
-    position: absolute;
-    padding-left: 30px;
-    padding-right: 20px;
-
-}
-
-.card img{
-    width: fit-content;
-    height: 100%;
-    border: white solid 2px;
-    filter: grayscale(1);
-    min-width: 100px;
-}
-
-.card img:hover {
-    filter: grayscale(0)
-}
-
-.cardbigger {
-    display: flex;
-    margin: 10px;
-    border: rgb(105, 83, 121, .9) solid 10px;
-    height: 400px;
-    width: 90%;
-    box-shadow: 0px 5px 1px rgb(105,83,121) ;
-}
-
-
-.cardbigger p {
-    color: white;
-    padding: 5px;
-    padding-left: 30px;
-    padding-right: 20px;
-    border-right: white solid 2px;
-    border-bottom: white solid 2px;
-    border-top: white solid 2px;
-    font-size: 40px;
-    background-color: rgb(105, 83, 121, .9);
-    margin-top: 25%;
-    position: absolute;
-}
-
-.cardbigger img {
-    width: fit-content;
-    height: 100%;
-    width: 100%;
-    border:white solid 2px;
-    filter: grayscale(1);
-}
-
-.cardbigger img:hover {
-    filter: grayscale(0)
-}
-
 
 p{
     color:white;
@@ -298,6 +299,8 @@ footer {
     padding-top: 100px;
     color: white;
 }
+
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 1280px) {
     h1 {
