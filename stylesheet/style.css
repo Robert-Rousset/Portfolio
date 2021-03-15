@@ -88,7 +88,7 @@ that there is space between the "Work h2" and the nav bar*/
 
 /*/////////SECTION ONE//////////// */
 .aboutme {
-    background-image: linear-gradient(to left, rgb(105, 83, 121, .2)0%, rgba(237,131,92,1)
+    background-image: linear-gradient(to left, rgb(105, 83, 121, .2)0%, rgba(237,131,92,.3)
     90%);    
     box-shadow: -2px 2px 3px black;
     border-bottom-left-radius: 15px;
@@ -112,7 +112,6 @@ that there is space between the "Work h2" and the nav bar*/
     color: rgb(0, 0, 0);
     height: 100%;
     text-align: justify;
-    text-shadow: .5px 0px 5px rgb(239, 242, 255);
 }
 
 .aboutme img {
@@ -120,7 +119,7 @@ that there is space between the "Work h2" and the nav bar*/
     width: 280px;
     height:100%;
     box-shadow: 0px 1px 10px black;
-    border: black solid 10px;
+    border:rgb(105, 83, 121,.1) solid 1px;
 }
 
 /* to try and make even space between the image and text*/
@@ -152,7 +151,7 @@ that there is space between the "Work h2" and the nav bar*/
 }
 /*////////// SECTION 2///////////// */
 .work{    
-    background-image: linear-gradient(to right, rgb(105, 83, 121, .2)0%, rgba(237,131,92,1)
+    background-image: linear-gradient(to right, rgb(105, 83, 121, .2)0%, rgba(237,131,92,.3)
     90%);    
     box-shadow: 2px 3px 3px black;
     border-top-left-radius: 50px;
@@ -235,7 +234,7 @@ that there is space between the "Work h2" and the nav bar*/
 
 /* /////////SECTION 3////////// */
 .contact {
-    background-image: linear-gradient(to left, rgb(105, 83, 121, .2)0%, rgb(105, 83, 121, .4)
+    background-image: linear-gradient(to left, rgb(105, 83, 121, .4)0%, rgba(237,131,92,.2)
     90%);    
     box-shadow: -2px 2px 3px black;
     border-bottom-left-radius: 15px;
