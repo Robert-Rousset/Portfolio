@@ -195,6 +195,9 @@ that there is space between the "Work h2" and the nav bar*/
     filter: grayscale(.8);
     min-width: 100px;
 }
+#scratch img {
+    width: 100%;
+}
 .card img:hover {
     filter: grayscale(0)
 }
